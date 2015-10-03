@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/et_get_path"
+        android:hint="请输入下载地址"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:text="开始下载"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="startDown"/>
+    <Button
+        android:text="暂停下载"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="pauseDown"/>
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:max="100"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"/>
+    <TextView
+        android:id="@+id/progress_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
